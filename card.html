@@ -5,24 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Maker</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
             text-align: center;
         }
+
         header {
             background-color: #ffffff;
             padding: 1rem;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             margin-bottom: 2rem;
         }
+
         header h1 {
             margin: 0;
             font-size: 2rem;
             color: #26b26a;
         }
+
         .card-container {
             display: flex;
             flex-wrap: wrap;
@@ -30,6 +38,7 @@
             gap: 1.5rem;
             padding: 1rem;
         }
+
         .card {
             background-color: #ffffff;
             border-radius: 8px;
@@ -40,14 +49,17 @@
             cursor: pointer;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
+
         .card img {
             width: 100%;
             border-radius: 8px;
         }
+
         .card h3 {
             margin-top: 1rem;
             font-size: 1.1rem;
@@ -61,43 +73,43 @@
     </header>
     <div class="card-container">
         <div class="card" onclick="showAlert('Birthday')">
-            <img src="card_Images/starry-eyed-41519.avif alt="Birthday">
+            <img src="card_Images/starry-eyed-41519.avif" alt="Birthday">
             <h3>Birthday</h3>
         </div>
         <div class="card" onclick="showAlert('Thank You')">
-            <img src="https://via.placeholder.com/200x150" alt="Thank You">
+            <img src="card_Images/fun-&-color-46061.avif" alt="Thank You">
             <h3>Thank You</h3>
         </div>
         <div class="card" onclick="showAlert('Anniversary')">
-            <img src="https://via.placeholder.com/200x150" alt="Anniversary">
+            <img src="card_Images/love-and-laughter-46137.avif" alt="Anniversary">
             <h3>Anniversary</h3>
         </div>
         <div class="card" onclick="showAlert('Wedding')">
-            <img src="https://via.placeholder.com/200x150" alt="Wedding">
+            <img src="card_Images/around-stars-36487.avif" alt="Wedding">
             <h3>Wedding</h3>
         </div>
         <div class="card" onclick="showAlert('Get Well')">
-            <img src="images\caring-thoughts-14093.avif" alt="Get Well">
+            <img src="card_Images/caring-thoughts-14093.avif" alt="Get Well">
             <h3>Get Well</h3>
         </div>
         <div class="card" onclick="showAlert('New Baby')">
-            <img src="https://via.placeholder.com/200x150" alt="New Baby">
+            <img src="card_Images/elephant-magic-37450.avif" alt="New Baby">
             <h3>New Baby</h3>
         </div>
         <div class="card" onclick="showAlert('Sympathy')">
-            <img src="https://via.placeholder.com/200x150" alt="Sympathy">
+            <img src="card_Images/heratfelt-words-45980.avif" alt="Sympathy">
             <h3>Sympathy</h3>
         </div>
         <div class="card" onclick="showAlert('Good Luck')">
-            <img src="https://via.placeholder.com/200x150" alt="Good Luck">
+            <img src="card_Images/dream-catcher-14485.avif" alt="Good Luck">
             <h3>Good Luck</h3>
         </div>
         <div class="card" onclick="showAlert('Christmas')">
-            <img src="https://via.placeholder.com/200x150" alt="Christmas">
+            <img src="card_Images/joyful-hearts-photo-46034.avif" alt="Christmas">
             <h3>Christmas</h3>
         </div>
         <div class="card" onclick="showAlert('New Year')">
-            <img src="https://via.placeholder.com/200x150" alt="New Year">
+            <img src="card_Images/cheers-to-the-year-46166.avif" alt="New Year">
             <h3>New Year</h3>
         </div>
     </div>
