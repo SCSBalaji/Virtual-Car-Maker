@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Greeting Card</title>
+    <link rel="stylesheet" href="templates.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="front">
+                <h1 contenteditable="true" class="custom-text">Happy Birthday!</h1>
+                <div class="image-placeholder">
+                    <input type="file" id="image-upload" />
+                    <span>Upload Image</span>
+                </div>
+            </div>
+            <div class="inside">
+                <p contenteditable="true" class="custom-message">Write your message here...</p>
+            </div>
+        </div>
+        
+        <!-- Customization Options -->
+        <div class="controls">
+            <label for="font-color">Text Color:</label>
+            <input type="color" id="font-color" />
+
+            <label for="font-size">Font Size:</label>
+            <input type="number" id="font-size" min="12" max="50" value="24" />
+
+            <label for="bg-color">Background Color:</label>
+            <input type="color" id="bg-color" />
+        </div>
+
+        <button id="download-btn">Download Card</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
